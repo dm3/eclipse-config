@@ -1,0 +1,3 @@
+new in Eclipse 3.4
+	- templates can have ${:import(some.Class)} statements
+

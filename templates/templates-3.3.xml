@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="equals append statement" enabled="true" name="appeq">append(${field}, other.${field}).${cursor}</template><template autoinsert="true" context="java" deleted="false" description="Append super equals" enabled="true" name="appsup">appendSuper(super.equals(obj)).</template><template autoinsert="true" context="java" deleted="false" description="TestNG beforeClass" enabled="true" name="cbefore">@BeforeClass&#13;
+public void beforeClass() {&#13;
+	${cursor}&#13;
+}</template><template autoinsert="true" context="java" deleted="false" description="TestNG data provider" enabled="true" name="dataprovider">@DataProvider&#13;
+public Object[][] ${providerName}() {&#13;
+	return new Object[][] {&#13;
+		new Object[] {${cursor}}&#13;
+	};&#13;
+}</template><template autoinsert="true" context="java" deleted="false" description="equals using EqualsBuilder" enabled="true" name="equals">@Override&#13;
+public boolean equals(Object obj) {&#13;
+	if (!(obj instanceof ${enclosing_type})) {&#13;
+		return false;&#13;
+	}&#13;
+	if (this == obj) {&#13;
+		return true;&#13;
+	}&#13;
+	${enclosing_type} other = (${enclosing_type}) obj;&#13;
+	return new EqualsBuilder().${cursor}isEquals();&#13;
+}</template><template autoinsert="true" context="java" deleted="false" description="logging statement" enabled="true" name="log">if(${logger:var(Logger)}.is${Debug}Enabled()) {&#13;
+   ${logger:var(Logger)}.${debug}("${cursor}");&#13;
+}</template><template autoinsert="true" context="java" deleted="false" description="private static final Logger" enabled="true" name="logger">private static final Logger logger = LoggerFactory.getLogger(${enclosing_type}.class);</template><template autoinsert="true" context="java" deleted="false" description="TestNG after method" enabled="true" name="mafter">@AfterMethod&#13;
+public void ${afterMethod}() {&#13;
+	${cursor}&#13;
+}</template><template autoinsert="true" context="java" deleted="false" description="TestNG beforeMethod" enabled="true" name="mbefore">@BeforeMethod&#13;
+public void ${beforeMethod}() {&#13;
+	${cursor}&#13;
+}</template><template autoinsert="false" context="java" deleted="false" description="TestNG test method" enabled="true" id="org.eclipse.jdt.ui.templates.test" name="test">@Test
+public void ${name}() {
+	${cursor}
+}</template><template autoinsert="true" context="java" deleted="false" description="toString using ReflectionToStringBuilder" enabled="true" name="tostring">@Override&#13;
+public String toString() {&#13;
+	return ReflectionToStringBuilder.toString(this, ToStringStyle.MULTI_LINE_STYLE);&#13;
+}</template></templates>
