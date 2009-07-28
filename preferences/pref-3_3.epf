@@ -1,0 +1,5 @@
+#Tue Jul 28 14:11:07 EEST 2009
+file_export_version=3.0
+@org.eclipse.ui.workbench=3.3.2.M20080207-0800
+/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands>\r\n<keyBinding contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="ViPluginKeyConfiguration" keySequence\="CTRL+C"/>\r\n<keyBinding commandId\="org.eclipse.ui.project.buildProject" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="ALT+CTRL+B"/>\r\n</org.eclipse.ui.commands>
+\!/=
